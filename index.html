@@ -1,14 +1,22 @@
 <!doctype html>
 <html ng-app>
+
 <head>
   <title>My AngularJS App</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
+
 <body>
   <h1>This is AngularJS appplication</h1>
   <div>
     <h2>Beow expression is resolved concept called as interpolation</h2>
     2 + 5 = {{2+5}}
   </div>
+  <div>
+    Enter Numbers to Multiply:
+    <input type="text" ng-model="Num1" /> x <input type="text" ng-model="Num2" />
+    = <span>{{Num1 * Num2}}</span>
+  </div>
 </body>
+
 </html>
